@@ -47,22 +47,31 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+
   height: 100%;
 }
 
 .piano {
   display: flex;
   flex-direction: column;
-  width: 95%;
-  max-width: 670px;
+
+  width: 650px;
+
+  background-color: #121212;
+  border-radius: 15px;
 }
 
 .piano-panel {
-  font-family: sans-serif;
-  width: 100%;
+  display: flex;
+  gap: 10px;
+
   padding: 10px;
-  border-radius: 5px 5px 0px 0px;
-  background-color: #0e0e0e;
+
+  font-family: sans-serif;
+}
+
+.piano-panel div {
+  display: flex;
 }
 
 .piano-keys {
@@ -71,8 +80,6 @@ main {
   justify-content: center;
   height: 210px;
   padding: 10px 30px;
-  background-color: #1b1a1a;
-  border-radius: 0px 0px 5px 5px;
 }
 
 .keys {
@@ -85,6 +92,7 @@ main {
   color: #797979;
   user-select: none;
 }
+
 .keys:active {
   border-bottom: white;
 }
@@ -96,7 +104,7 @@ main {
 }
 
 .white {
-  flex-grow: 1;
+  flex: 1;
   background-color: #fff8dc;
   border-bottom: 4px solid #bebbab;
   border-radius: 5px;
@@ -112,7 +120,7 @@ main {
 
 .black {
   width: 40px;
-  height: 100px;
+  height: 110px;
   background: linear-gradient(to bottom, #000000, #3a3a3a);
   border-bottom: 3px solid #161616;
   border-radius: 0px 0px 5px 5px;
