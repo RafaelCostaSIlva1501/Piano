@@ -174,4 +174,11 @@ main {
 }
 
 @media only screen and (orientation: landscape) {
+  .piano {
+    display: flex;
+  }
+
+  .rotate-screen {
+    display: none;
+  }
 }
